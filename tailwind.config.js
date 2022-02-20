@@ -5,7 +5,7 @@ module.exports = {
       fontFamily:{
         "Bebas": "bebas neue",
         "Jetbrain": "JetBrains Mono",
-        "Monument": "Monument Extended",
+        "Public": "Public Sans",
         "Coda": "Coda"
       },
       backgroundImage:{
