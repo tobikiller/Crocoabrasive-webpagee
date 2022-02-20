@@ -1,22 +1,4 @@
 
-/* responsive */
-    
-body {
-        font-size: 1.1667em;
-        max-width: calc(25 * var(--vspace));
-      
-    }
-    
-    p {
-    margin: var(--vspace) 0; 
-    line-height: var(--vspace); 
-}
-
-
-/*end reponsive font-size*/
-
-
-
 @media(max-width:767px){
     .navbar{
         position: absolute;
