@@ -619,6 +619,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: max-content;
 }
 
+.w-\[3px\] {
+  width: 3px;
+}
+
+.w-\[310px\] {
+  width: 310px;
+}
+
+.w-\[600px\] {
+  width: 600px;
+}
+
 .min-w-full {
   min-width: 100%;
 }
@@ -742,6 +754,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .overflow-x-auto {
   overflow-x: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-md {
