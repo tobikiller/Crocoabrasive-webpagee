@@ -497,6 +497,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
@@ -513,8 +518,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }
 
-.mb-7 {
-  margin-bottom: 1.75rem;
+.mb-11 {
+  margin-bottom: 2.75rem;
 }
 
 .inline-block {
@@ -581,8 +586,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 20rem;
 }
 
-.max-w-sm {
-  max-width: 24rem;
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .resize {
@@ -597,12 +602,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
+.place-content-center {
+  place-content: center;
+}
+
 .place-items-center {
   place-items: center;
 }
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -649,6 +662,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.place-self-center {
+  place-self: center;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -692,6 +715,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-yellow-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-40 {
@@ -747,6 +775,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.py-11 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pt-5 {
@@ -807,6 +845,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-semibold {
   font-weight: 600;
 }
@@ -848,6 +896,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(253 224 71 / var(--tw-text-opacity));
 }
 
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -876,9 +929,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 768px) {
+  .md\:m-0 {
+    margin: 0px;
+  }
+
   .md\:mx-20 {
     margin-left: 5rem;
     margin-right: 5rem;
+  }
+
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
   }
 
   .md\:flex {
@@ -905,6 +971,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: row;
   }
 
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
   .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -921,6 +991,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:p-5 {
@@ -940,6 +1016,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-lg {
@@ -962,8 +1042,46 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2.5rem;
   }
 
+  .md\:text-\[41px\] {
+    font-size: 41px;
+  }
+
+  .md\:text-\[42px\] {
+    font-size: 42px;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-yellow-400 {
     --tw-text-opacity: 1;
     color: rgb(250 204 21 / var(--tw-text-opacity));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
