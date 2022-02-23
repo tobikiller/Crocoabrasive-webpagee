@@ -6,7 +6,8 @@ module.exports = {
         "Bebas": "bebas neue",
         "Jetbrain": "JetBrains Mono",
         "Public": "Public Sans",
-        "Coda": "Coda"
+        "Coda": "Coda",
+        "Monument":"Monument Extended"
       },
       backgroundImage:{
         "bgFixed":"url('images/bgfixed.png') ",

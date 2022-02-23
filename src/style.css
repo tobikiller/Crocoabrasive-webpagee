@@ -1,3 +1,5 @@
+@import url(//db.onlinewebfonts.com/c/55d433372d270829c51e2577a78ef12d?family=Monument+Extended);
+@font-face {font-family: "Monument Extended"; src: url("//db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.eot"); src: url("//db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.woff") format("woff"), url("//db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/55d433372d270829c51e2577a78ef12d.svg#Monument Extended") format("svg"); }
 
 @media(max-width:767px){
     .navbar{
@@ -16,6 +18,7 @@
         visibility: hidden;
         transition: 1s cubic-bezier(0.88, 0, 0.04, 1.01);
         opacity: 0;
+        
     }
 
     .show{
@@ -26,6 +29,7 @@
 
     .navbar li{
         font-size: 48px ;
+        font-family: "Monument Extended" !important ;
     }
 
     .navbar :nth-child(4){
