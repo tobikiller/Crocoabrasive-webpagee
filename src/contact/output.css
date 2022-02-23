@@ -1003,6 +1003,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding: 1.25rem;
   }
 
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
   .md\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
